@@ -15,13 +15,13 @@
       </style>
 </head>
 <body>
-    <header class="bg-[#5855E7] py-4">
-        <div class="px-5 containers flex items-center justify-between">
+    <header class="bg-[#5855E7] py-[9px] sm:py-4">
+        <div class="px-5 xl:px-0 containers flex items-center justify-between">
             <a href="/">
                 <img src="./images/logo.svg" class="w-[80px] h-[57px] sm:w-[156px] sm:h-[111px]" alt="Header logo">
             </a>
             <nav class="hidden xl:flex xl:items-center xl:gap-[42px]">
-                <a href="/" class="border-b-[2px] border-transparent hover:border-white duration-300 text-white font-medium  text-[24px] leading-[29.11px] text">О нашей школе</a>
+                <a href="/" class="border-b-[2px] border-transparent hover:border-white duration-300 text-white font-medium  text-[24px] leading-[29.11px]">О нашей школе</a>
                 <a href="/" class="border-b-[2px] border-transparent hover:border-white duration-300 text-white font-medium  text-[24px] leading-[29.11px]">Преимущества</a>
                 <a href="/" class="border-b-[2px] border-transparent hover:border-white duration-300 text-white font-medium  text-[24px] leading-[29.11px]">Классы</a>
                 <a href="/" class="border-b-[2px] border-transparent hover:border-white duration-300 text-white font-medium  text-[24px] leading-[29.11px]">Контакты</a>
@@ -29,9 +29,11 @@
             <div class="flex items-center gap-5">
                 <a href="/" class="hidden sm:block hover:bg-transparent border-[2px] border-transparent hover:border-white hover:text-white duration-300 py-[11px] px-[35px] bg-white rounded-[5px] text-[24px] leading-[28.31px] font-medium">Связаться с нами </a>
                 <button class="sm:hidden">
-                    <img src="./images/phone.svg" alt="Phone logo" width="30" height="30">
+                    <a href="tel+998979460810">
+                        <img src="./images/phone.svg" alt="Phone logo" width="30" height="30">
+                    </a>
                 </button>
-                <button class="xl:hidden">
+                <button class="xl:hidden" onclick="handleMenuBtnClick()">
                     <img src="./images/hamburger.svg" alt="hamburger logo" width="30" height="30">
                 </button>
             </div>
@@ -39,32 +41,32 @@
         </div>
     </header>
     <main>
-        <section class="hero-section pt-[589px] lg:pt-[180px]">
+        <section class="hero-section pt-[329px] sm:pt-[589px] lg:pt-[180px] pb-[65px] sm:pb-[140px]">
             <div class="containers">
-                <div class="sm:px-5 justify-center sm:justify-start lg:w-[568px] text-center lg:text-start pt-10 sm:pb-12 bg-white lg:bg-transparent">
-                    <h1 class="mb-[20px] sm:mb-[41px] font-bold text-[18px] sm:text-[40px] leading-[22.28px] sm:leading-[49.52px]">
+                <div class="lg:w-[568px] text-center lg:text-start pt-10 sm:pb-12 bg-white lg:bg-transparent">
+                    <h1 class="mb-[20px] font-bold text-[18px] sm:text-[40px] leading-[22.28px] sm:leading-[49.52px]">
                         <span class="text-[#483285]">The Best Future Stars</span>
                             - мы заботимся о будущем вашего ребенка
                     </h1>
-                    <p class="mb-[50px] font-normal text-[18px] leading-[21.6px]">
+                    <p class="mb-[30px] font-normal text-[18px] leading-[21.6px]">
                         Наши опытные преподователи сделают процесс обучения максимально
                          интересным и эффективным для вашего ребенка
                     </p>
-                    <div class="pl-[20px] sm:justify-center justify-center lg:justify-start sm:pl-[0] flex items-center gap-6 sm:gap-10 sm:pb-[0]">
-                        <a href="/" class="sm:px-[32px] px-[19px] sm:pt-[5px] pt-[9px] sm:pb-[10px] pb-[11px] sm:border-[3px] border-transparent bg-[#6347EB] rounded-[10px] text-white text-[16px] sm:text-[32px] leading-[17.15px] sm:leading-[37.5px]">Позвонить</a>
-                        <a href="/" class="sm:px-[32px] px-[16px] sm:pt-[5px] pt-[9px] sm:pb-[10px] pb-[11px] border-[3px] rounded-[10px] sm:text-[32px] text-[14px]  leading-[17.15px] sm:leading-[37.5px]">Подробнее</a>
+                    <div class="flex items-center justify-center lg:justify-start gap-[24px] sm:gap-10">
+                        <a href="/" class="px-[19px] sm:px-[32px] pt-[9px] sm:pt-[5px] pb-[15px] sm:pb-[10px] border-[3px] border-transparent bg-[#6347EB] rounded-[10px] text-white text-[16px] sm:text-[32px] leading-[17.15px] sm:leading-[37.15px]">Позвонить</a>
+                        <a href="/" class="sm:px-[32px] px-[19px] sm:pt-[5px] pt-[9px] sm:pb-[10px] pb-[15px] border-[3px] border-[#6347EB] rounded-[10px] sm:text-[32px] text-[16px]  leading-[17.15px] sm:leading-[37.5px]">Подробнее</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="about-section sm:pt-[214px] sm:pb-[214] pt-[65px] pb-[40px]">
             <div class="containers">
-                <div class="flex flex-col text-center lg:text-start gap-[46px] lg:flex-row lg:justify-between lg:items-center">
-                    <h2 class="font-bold text-[32px] leading-[39.62px] lg:text-[40px] lg:leading-[49.52px] lg:mb-0 mb-[34px] sm:hidden">
+                <div class="flex flex-col text-center lg:text-start gap-[46px] lg:flex-row lg:justify-between lg:items-start">
+                    <h2 class="font-bold text-[32px] leading-[39.62px] lg:text-[40px] lg:leading-[49.52px] lg:mb-0 mb-[34px] lg:hidden">
                         О нас
                     </h2>
                     <img src="./images/about.png" alt="About img" class="w-auto lg:w-[534px] lg:h-[492px] object-cover">
-                    <div class="flex flex-col items-center lg:items-start text-center m-[0,auto] lg:flex-col lg:justify-between lg:items-center">
+                    <div class="flex flex-col items-center lg:items-start m-[0,auto] lg:flex-col lg:justify-between">
                         <h2 class="font-bold text-[32px] leading-[39.62px] lg:text-[40px] lg:leading-[49.52px] lg:mb-[48px] hidden lg:block">
                                 О нас
                         </h2>
@@ -86,7 +88,171 @@
                 </div>
             </div>
         </section>
+        <section id="service" class="services-section mb-[118px] pt-[33px] pb-[40px] sm:pt-[75px] sm:pb-[73px] bg-[#5855E7]" >
+            <div class="containers">
+                <h2 class="font-bold text-[32px] sm:text-[40px] leading-[39.62px] sm:leading-[49.52px] text-white text-center mb-[59px] sm:mb-[92px]">Наши преимущества</h2>
+                <ul class="flex justify-center flex-wrap gap-[50px]">
+                    <li class="w-[375px] text-center">
+                        <img src="./images/service-1.png" class="mb-[43px] mx-auto" alt="Service img">
+                        <h3 class="font-bold text-[23px] mb-[20px] leading-[29.71px] text-white">3-х разовое питание </h3>
+                        <p class="font-normal text-[18px] leading-[21.6px] text-white">Для комфотрного времяпровождения в нашей школе, мы готовим вкусную и полезную еду 3 раза в день</p>
+                    </li>
+                    <li class="w-[375px] text-center">
+                        <img src="./images/service-2.png" class="mb-[43px] mx-auto" alt="Service img">
+                        <h3 class="font-bold text-[23px] mb-[20px] leading-[29.71px] text-white">IT технологии</h3>
+                        <p class="font-normal text-[18px] leading-[21.6px] text-white">21 век- это век информационных технологий. Ваш ребенок сможет научиться азам програмированния, тенденциям в мире гаджетов и профессиям будущего</p>
+                    </li>
+                    <li class="w-[375px] text-center">
+                        <img src="./images/service-3.png" class="mb-[43px] mx-auto" alt="Service img">
+                        <h3 class="font-bold text-[23px] mb-[20px] leading-[29.71px] text-white">Ментальная арифметика</h3>
+                        <p class="font-normal text-[18px] leading-[21.6px] text-white">Мы обучим детей быстро вычислять в уме сложные математические рассчёты</p>
+                    </li>
+                    <li class="w-[375px] text-center">
+                        <img src="./images/service-4.png" class="mb-[43px] mx-auto" alt="Service img">
+                        <h3 class="font-bold text-[23px] mb-[20px] leading-[29.71px] text-white">Общение на английском языке </h3>
+                        <p class="font-normal text-[18px] leading-[21.6px] text-white">Для свободного общения на английском языке, у нас предусматривается целый день Speaking</p>
+                    </li>
+                    <li class="w-[375px] text-center">
+                        <img src="./images/service-5.png" class="mb-[43px] mx-auto" alt="Service img">
+                        <h3 class="font-bold text-[23px] mb-[20px] leading-[29.71px] text-white">Иностранные языки</h3>
+                        <p class="font-normal text-[18px] leading-[21.6px] text-white">Наши высококвалифицированные учителя обучат детей: Английскому, русскому, арабскому и китайскому языку</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="class-section">
+            <h2 class="text-center text-[32px] sm:text-[40px] font-bold leading-[39.62px] sm:leading-[49.52px] mb-[38px] sm:mb-[81px] relative before:content-['Классы'] z-50 before:z-[-999]
+            before:absolute before:top-[-41px] before:right-0 before:left-0 before:text-[72px] before:sm:text-[96px] before:font-bold before:text-[#EEEEEE]">Классы</h2>
+            <div class="containers flex-col-reverse lg:flex-row flex justify-between py-[28px] px-[20px] sm:px-[50px] sm:pt-[50px] sm:pb-[70px] rounded-[10px]">
+                <ul class="flex justify-center flex-wrap gap-[55px]">
+                    <li class="w-[301px] rounded-[15px] bg-[#5855E7] pt-[19px] pb-[37px] px-[18px] text-center box-shadow: 0px 0px 35px 0px #33333340;">
+                        <img src="./images/class-1.png" alt="Class img" class="rounded-[15px]" width="265" height="251">
+                        <h2 class="text-white font-semibold text-[30px] leading-[36.75px] mt-[25px]">1 классы</h2>
+                        <p class="text-white font-medium text-[18px] leading-[21.83px] mt-[15px]">6-7 лет</p>
+                        <p class="text-white font-normal text-[14px] leading-[16.8px] mt-[15px]">Изучение калиграфии, логопедия, английский этикет, разговорный английский, общеобразовательные предметы и спортивные занятия</p>
+                        <button class="mt-[30px] bg-white text-[#6347EB] rounded-[5px] px-[24px] pt-1 pb-[6px] text-[18px] font-medium leading-[21.83px]">Записаться</button>
+                    </li>
+                    <li class="w-[301px] rounded-[15px] bg-[#5855E7] pt-[19px] pb-[37px] px-[18px] text-center box-shadow: 0px 0px 35px 0px #33333340;">
+                        <img src="./images/class-2.png" alt="Class img" class="rounded-[15px]" width="265" height="251">
+                        <h2 class="text-white font-semibold text-[30px] leading-[36.75px] mt-[20px]">2 классы</h2>
+                        <p class="text-white font-medium text-[18px] leading-[21.83px] mt-[15px]">7-8 лет</p>
+                        <p class="text-white font-normal text-[14px] leading-[16.8px] mt-5">Английский 1 step, китайский язык, арифметика, логическое мышление, общеобразовательные предметы и спортивные занятия</p>
+                        <button class="mt-[30px] bg-white text-[#6347EB] rounded-[5px] px-[24px] pt-1 pb-[6px] text-[18px] font-medium leading-[21.83px]">Записаться</button>
+                    </li>
+                    <li class="w-[301px] rounded-[15px] bg-[#5855E7] pt-[19px] pb-[37px] px-[18px] text-center box-shadow: 0px 0px 35px 0px #33333340;">
+                        <img src="./images/class-3.png" alt="Class img" class="rounded-[15px]" width="265" height="251">
+                        <h2 class="text-white font-semibold text-[30px] leading-[36.75px] mt-[20px]">3 классы</h2>
+                        <p class="text-white font-medium text-[18px] leading-[21.83px] mt-[15px]">8-9 лет</p>
+                        <p class="text-white font-normal text-[14px] leading-[16.8px] mt-5">Английский 2 step, арабский язык, психология, ментальная арифметика, IT технологии, общеобразовательные предметы и спортивные занятия</p>
+                        <button class="mt-[30px] bg-white text-[#6347EB] rounded-[5px] px-[24px] pt-1 pb-[6px] text-[18px] font-medium leading-[21.83px]">Записаться</button>
+                    </li>
+                    <li class="w-[301px] rounded-[15px] bg-[#5855E7] pt-[19px] pb-[37px] px-[18px] text-center box-shadow: 0px 0px 35px 0px #33333340;">
+                        <img src="./images/class-4.png" alt="Class img" class="rounded-[15px]" width="265" height="251">
+                        <h2 class="text-white font-semibold text-[30px] leading-[36.75px] mt-[16px]">4 классы</h2>
+                        <p class="text-white font-medium text-[18px] leading-[21.83px] mt-[19px]">9-10 лет</p>
+                        <p class="text-white font-normal text-[14px] leading-[16.8px] mt-5">Английский 3 step, французский и немецкий язык,  IT технологии, общеобразовательные предметы и спортивные занятия</p>
+                        <button class="mt-[30px] bg-white text-[#6347EB] rounded-[5px] px-[24px] pt-1 pb-[6px] text-[18px] font-medium leading-[21.83px]">Записаться</button>
+                    </li>
+                    <li class="w-[301px] rounded-[15px] bg-[#5855E7] pt-[19px] pb-[37px] px-[18px] text-center box-shadow: 0px 0px 35px 0px #33333340;">
+                        <img src="./images/class-5.png" alt="Class img" class="rounded-[15px]" width="265" height="248">
+                        <h2 class="text-white font-semibold text-[30px] leading-[36.75px] mt-[23px]">0 классы</h2>
+                        <p class="text-white font-medium text-[18px] leading-[21.83px] mt-[15px]">4-5 лет</p>
+                        <p class="text-white font-normal text-[14px] leading-[16.8px] mt-5">Математика, логическое мышление, пропись, изо студия, IT технологии, робототехника гимнастика, таэквондо</p>
+                        <button class="mt-[30px] bg-white text-[#6347EB] rounded-[5px] px-[24px] pt-1 pb-[6px] text-[18px] font-medium leading-[21.83px]">Записаться</button>
+                    </li>
+                </ul>
+                
+                
+                
+                
+            </div>
+        </section>
+        <section class="contact-section">
+            <h2 class="text-center text-[32px] sm:text-[40px] font-bold leading-[39.62px] sm:leading-[49.52px] mb-38px sm:mb-[81px] relative before:content-['Связаться'] z-50 before:z-[-999] before:absolute before:top-[-41px] before:right-0 before:left-0 before:text-[72px] before:sm:text-[96px] before:font-bold before:text-[#EEEEEE]">Связаться с нами </h2>
+            <div class="containers flex-col-reverse lg:flex-row flex justify-between bg-[#5855E7] py-[28px] px-[20px] mb-[97px] sm:px-[50px] sm:pt-[50px] sm:pb-[70px] rounded-[10px]">
+                <div class="hidden sm:block mt-[30px] lg:mt-0 w-full text-center lg:text-start lg:w-[494px]">
+                    <h3 class="mb-[28px] font-medium text-[40px] text-white leading-[48.52px]">Контакты </h3>
+                    <ul class="space-y-[20px] lg:space-y-[41px] mb-[40px]">
+                        <li class="relative before:hidden lg:before:block lg:pl-[32px] font-normal text-[24px] leading-[28.8px] before:w-[20px] before:h-[20px] before:bg-[#A23AC1] before:absolute before:left-0 before:top-[6px] text-white">
+                            г.Ташкент, Чиланзар 16-й квартал, ул. Ботирма
+                        </li>
+                        <li class="relative before:hidden lg:before:block lg:pl-[32px] font-normal text-[24px] leading-[28.8px] before:w-[20px] before:h-[20px] before:bg-[#A23AC1] before:absolute before:left-0 before:top-[6px] text-white">
+                            <a class="text-white" href="tel+998971970771">+998970020771</a>
+                        </li>
+                        <li class="relative before:hidden lg:before:block lg:pl-[32px] font-normal text-[24px] leading-[28.8px] before:w-[20px] before:h-[20px] before:bg-[#A23AC1] before:absolute before:left-0 before:top-[6px] text-white">
+                            <a class="text-white" href="tel+998971970771">+998971970771 (Пн.-Пт. с 09:00 до 17:00)</a>
+                        </li>
+                    </ul>
+                    <img src="./images/contact-school.png" class="hidden lg:block" alt="School img" width="485" height="338">
+                </div>
+                <form class="lg:w-[400px]" action="">
+                    <h3 class="mb-20px lg:mb-[28px] font-medium text-[24px] text-center sm:text-start leading-[29.11px] sm:text-[40px] text-white sm:leading-[48.52px]">
+                        Оставьте заявку
+                    </h3>
+                    <p class="font-normal text-[16px] sm:text-[18px] leading-[18.75px] sm:leading-[21.6px] text-white mb-30px sm:mb-[20px]">
+                        В честь открытия нашей школы дарим скидку -20%
+                    </p>
+                    <input class="text-[14px] sm:text-[20px] leading-[24px] pt-[7px] sm:pt-[15px] pb-[7px] sm:pb-15px pl-[21px] sm:pl-[12px] bg-white rounded-[5px] w-full outline-none placeholder-[#000000]" autocomplete="off" required name="lastname" aria-label="Enter Your Name" type="text" placeholder="Имя">
+                    <input type="text" class="mt-[16px] sm:mt-[26px] text-[16px] sm:text-[20px] leading-[21.6px] sm:leading-[24px] py-[7px] sm:pt-[15px] sm:pb-[15px] pl-[21px] sm:pl-[12px] bg-white rounded-[5px] w-full outline-none placeholder-[#000000]" required autocomplete="off" name="text" aria-label="Enter Your Lastname" placeholder="Фамилия">
+                    <input type="phone" class="sm:hidden mt-[16px] text-[16px] sm:text-[20px] leading-[21.6px] sm:leading-[24px] py-[7px] sm:pt-[15px] sm:pb-[15px] pl-[21px] sm:pl-[12px] bg-white rounded-[5px] w-full outline-none placeholder-[#000000]" required autocomplete="off" name="phone" placeholder="Номер">
+                    <textarea rows="10" name="phone" class="hidden sm:block mt-[26px] text-[20px] leading-[24px] pl-[13px] pt-[20px] pb-[12px] bg-white rounded-[5px] w-full outline-none placeholder-[#000000]" placeholder="Номер"></textarea>
+                    <div class="tect-center sm:text-right w-full mt-[24px]">
+                        <button class="border-[2px] border-transparent duration-300 hover:border-white hover:text-white hover:bg-transparent py-[6px] sm:py-[12px] w-[109px] sm:w-[197px] bg-white rounded-[6px] text-[14px] sm:text-[24px] leading-[16.41px] sm:leading-28.13px">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer id="footer" class="px-[27px] py-[26px] sm:!px-0 bg-[#5855E7]">
+        <div class="conatainers flex items-center justify-between">
+            <a href="/">
+                <img src="./images/logo.svg"  class="w-[67px] h-[48px]" alt="Site Logo" width="156" height="111">
+            </a>
+            <div class="flex flex-row sm:flex-row items-center sm:gap-[37px]">
+                <span class="font-medium text-[14px] sm:text-[20px] leading-[16.98px] sm:leading-[24.26px] text-white">Контакты:</span>
+                <div class="flex flex-col gap-[3px] sm:gap-[9px]">
+                    <a class="text-[13px] sm:text-[20px] text-white" href="tel+998971970771">+998971970771</a>
+                    <a class="text-[13px] sm:text-[20px] text-white" href="tel+998971970771">+998971970771</a>
+                </div>
+            </div>
+            <strong class="font-semibold text-[12px] sm:text-[20px] text-white leading-[14.56px] sm:leading-[24.5px]"></strong>
+            <div class="flex items-center gap-[21px] mt-[17px] sm:mt-[26px]">
+                <a href="/">
+                    <img src="./images/telegram.svg" width="32" height="32" alt="Telegram logo">
+                </a>
+                <a href="/">
+                    <img src="/images/instagram.svg" width="32" height="32" alt="Instagram logo">
+                </a>
+                <a href="/">
+                    <img src="./images/facebook.svg" width="32" height="32" alt="Facebook logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="menu xl:hidden w-[100%] h-[150vh] z-50 bg-[#5855E7] p-[13px] fixed top-0 right-[-100%] duration-500">
+        <div class="flex items-center justify-between mb-[43px]">
+            <a href="/">
+                <img src="./images/logo.svg" alt="Site logo" width="100" height="97">
+            </a>
+            <button onclick="handleCloseMenu()">
+                <img src="./images/close.svg" alt="Close icon" width="27" height="27">
+            </button>
+        </div>
+        <ul class="space-y-[15px]">
+            <li>
+                <a class="text-[18px] font-medium text-white leading-[21.83px]" href="/">О нашей школе</a>
+            </li>
+            <li>
+                <a class="text-[18px] font-medium text-white leading-[21.83px]" href="/">Преимущества</a>
+            </li>
+            <li>
+                <a class="text-[18px] font-medium text-white leading-[21.83px]" href="/">Контакты</a>
+            </li>
+        </ul>
+    </div>
+    
+    
+    <script src="./js/main.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>

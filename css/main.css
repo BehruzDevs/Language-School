@@ -2,8 +2,48 @@
 *{
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Light.woff2') format('woff2'),
+        url('Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+        url('./../fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+        url('./../fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./../fonts/Gilroy-Light.woff2') format('woff2'),
+        url('./../Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: "Gilroy" sans-serif;
+}
+
+
 .containers{
-    max-width: 1164px;
+    max-width: 1264px;
     margin: 0 auto;
 }
 .hero-section{
@@ -39,5 +79,13 @@
         background-image: url("./../images/hero-mobile.png");
         background-position-x:-130px;
         background-size: 800px;
+    }
+}
+
+@media (max-wisth:640px){
+    .hero-section{
+        border-image: url("./../images/hero-mobile.png");
+        background-position-x:center;
+        background-size: 374px 448px;
     }
 }
